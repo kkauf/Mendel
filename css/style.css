@@ -58,3 +58,25 @@ footer li {
 span {
   line-height: 1.5;
 }
+
+/* Header */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+}
+
+.logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 1.5rem;
+  height: 100%;
+}
+
+img {
+  height: 100%;
+  width: auto;
+}
