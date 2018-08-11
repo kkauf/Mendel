@@ -72,11 +72,41 @@ header {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding-left: 1.5rem;
-  height: 100%;
+  height: inherit;
+  overflow: hidden;
 }
 
-img {
-  height: 100%;
-  width: auto;
+.logo img {
+  max-height: 75%;
+  display: block;
+}
+
+/* Footer */
+
+footer {
+  border-top: 1px solid #E5E5E5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+}
+
+footer ul {
+  display: flex;
+}
+
+footer li {
+  padding: 1em;
+}
+
+footer a:visited {
+  color: inherit;
+}
+
+.main {
+  height: 100vh;
+  background-image: url("../assets/products/farm.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
