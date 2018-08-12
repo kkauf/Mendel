@@ -64,13 +64,33 @@ a {
   text-decoration: inherit;
 }
 
+a:visited {
+  color: inherit;
+}
+
+footer ul,
+header ul {
+  display: flex;
+}
+
+footer li,
+header li {
+  padding: 1em;
+}
+
+
 /* Header */
 
 header {
+  background-color: #FFF;
+  width: 100%;
+}
+
+header .container {
+  padding: 1rem 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 5rem;
 }
 
 .logo {
@@ -84,6 +104,26 @@ header {
 .logo img {
   max-height: 2rem;
   display: block;
+}
+
+header li:first-child {
+  display: none;
+}
+
+/* Crops */
+
+.crops {
+  top: 10rem;
+  background-image: url("../assets/products/farm.jpg");
+}
+
+.crops, .basket {
+  height: 100vh;
+  max-height: 750px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  image-rendering: crisp-edges;
 }
 
 /* Statement */
@@ -106,26 +146,11 @@ header {
   margin-left: auto;
 }
 
-
-/* Crops & Basket */
-
-.crops, .basket {
-  height: 100vh;
-  max-height: 700px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  image-rendering: crisp-edges;
-}
-
-.crops {
-  background-image: url("../assets/products/farm.jpg");
-}
+/* Basket */
 
 .basket {
   background-image: url("../assets/products/basket.jpg");
 }
-
 
 /* Footer */
 
@@ -135,16 +160,4 @@ footer {
   justify-content: space-between;
   align-items: center;
   height: 5rem;
-}
-
-footer ul {
-  display: flex;
-}
-
-footer li {
-  padding: 1em;
-}
-
-footer a:visited {
-  color: inherit;
 }
