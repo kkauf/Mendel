@@ -10,10 +10,12 @@ html, body {
   max-width: 1050px;
   margin: 0 auto;
   box-sizing: border-box;
+  padding: 0 1rem;
 }
 
 .tablet,
-.mobile {
+.mobile,
+.mobile::before {
   display: none;
 }
 
@@ -87,7 +89,7 @@ header {
 }
 
 header .container {
-  padding: 1rem 0;
+  padding: 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -110,6 +112,15 @@ header li:first-child {
   display: none;
 }
 
+@media only screen and (max-width: 500px) {
+   .desktop{
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+}
+
 /* Crops */
 
 .crops {
@@ -124,6 +135,12 @@ header li:first-child {
   background-position: center;
   background-size: cover;
   image-rendering: crisp-edges;
+}
+
+@media only screen and (max-width: 900px) {
+  .crops, .basket {
+    max-height: 50vh;
+  }
 }
 
 /* Statement */
@@ -146,6 +163,38 @@ header li:first-child {
   margin-left: auto;
 }
 
+@media only screen and (max-width: 900px) {
+  .statement-left, .statement-right {
+    width: 70%;
+  }
+
+  .statement-right h1,
+  .statement-right h3 {
+    text-align: right;
+  }
+  .main {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    min-height: 50vh;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .statement-left, .statement-right {
+    width: 100%;
+    margin: 0;
+  }
+
+  .statement-right h1,
+  .statement-right h3 {
+    text-align: left;
+  }
+
+  .main {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+}
 /* Basket */
 
 .basket {
