@@ -1,212 +1,67 @@
-html, body {
-  font-size: 16px;
-}
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:300&display=swap');
 
 /* header, nav, div, ul, li, h1, h2, span {
   border: 1px solid blue;
 } */
 
-.container {
-  max-width: 1050px;
-  margin: 0 auto;
-  box-sizing: border-box;
-  padding: 0 1rem;
-}
-
-.tablet,
-.mobile,
-.mobile::before {
-  display: none;
-}
-
-body {
-  font-family: 'Montserrat', sans-serif;
-  color: #616161;
-}
-
-h1, h2 {
-  margin: 1rem 0;
-  line-height: 1.5;
-}
-
-
-h1 {
-  color: #474747;
-  font-weight: 700;
-  font-size: 2rem;
-}
-
-h2 {
-  color: #474747;
-  font-weight: 600;
-  font-size: 2rem;
-}
-
-h3 {
-  color: #474747;
-  font-weight: 500;
-  font-size: 1.2rem;
-  line-height: 1.5;
-}
-
-p,
-footer li {
-  font-weight: 400;
-  font-size: .8rem;
-  padding: 0.5rem 0;
-  line-height: 1.5;
-}
-
-span {
-  line-height: 1.5;
-}
-
-a {
-  color: inherit;
-  text-decoration: inherit;
-}
-
-a:visited {
-  color: inherit;
-}
-
-footer ul,
-header ul {
-  display: flex;
-}
-
-footer li,
-header li {
-  padding: 1em;
-}
-
 
 /* Header */
 
-header {
-  background-color: #FFF;
-  width: 100%;
+body {
+  font-family: "Montserrat";
 }
 
-header .container {
-  padding: 1rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+h1 {
+  font-family: "Roboto Mono";
 }
 
-.logo {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  height: inherit;
-  overflow: hidden;
+#logo {
+  max-height: 3.5rem;
 }
 
-.logo img {
-  max-height: 2rem;
-  display: block;
+/* Banner 1 */
+
+#banner-1 {
+    background-image: url("../assets/manufacture.jpg");
+    /* background-image: url("../assets/manufacture.jpg"); */
+    height: 90vh;
+    max-height: 750px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    image-rendering: crisp-edges;
 }
 
-header li:first-child {
-  display: none;
-}
 
-@media only screen and (max-width: 500px) {
-   .desktop{
-    display: none;
+/*---Media Queries --*/
+@media (max-width: 992px) {
+
   }
-  .mobile {
-    display: block;
-  }
+@media (max-width: 768px) {
+
+}
+@media (max-width: 576px) {
+
 }
 
-/* Crops */
 
-.crops {
-  top: 10rem;
-  background-image: url("../assets/products/farm.jpg");
-}
 
-.crops, .basket {
-  height: 100vh;
-  max-height: 750px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  image-rendering: crisp-edges;
-}
 
-@media only screen and (max-width: 900px) {
-  .crops, .basket {
-    max-height: 50vh;
-  }
-}
 
-/* Statement */
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
 
-.main {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
 
-.statement-left {
-  width: 50%;
-  margin-right: auto;
-}
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
 
-.statement-right {
-  width: 50%;
-  margin-left: auto;
-}
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
 
-@media only screen and (max-width: 900px) {
-  .statement-left, .statement-right {
-    width: 70%;
-  }
-
-  .statement-right h1,
-  .statement-right h3 {
-    text-align: right;
-  }
-  .main {
-    margin-top: 1rem;
-    margin-bottom: 2rem;
-    min-height: 50vh;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .statement-left, .statement-right {
-    width: 100%;
-    margin: 0;
-  }
-
-  .statement-right h1,
-  .statement-right h3 {
-    text-align: left;
-  }
-
-  .main {
-    margin-top: 1rem;
-    margin-bottom: 2rem;
-  }
-}
-/* Basket */
-
-.basket {
-  background-image: url("../assets/products/basket.jpg");
-}
-
-/* Footer */
-
-footer {
-  border-top: 1px solid #E5E5E5;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 5rem;
-}
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/

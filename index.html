@@ -2,68 +2,90 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="./css/reset.css" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <title>Mendel</title>
   </head>
   <body>
 
 <!-- Header -->
 
-    <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
       <div class="container">
-        <div class="logo">
-          <img src="./assets/Mendel_logo.png" alt="Mendel Foods logo">
+
+        <div class="navbar-brand">
+          <a class="navbar-logo" href="./index.html"><img id="logo" src="./assets/Mendel_logo.png" alt="Mendel Foods logo"></a>
         </div>
-        <ul class='desktop'>
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="./index.html">Our Farms</a></li>
-          <li><a href="./index.html">Our produce</a></li>
-          <li><a href="./index.html">About Us</a></li>
-        </ul>
-        <ul class='mobile'>
-          <i class="fas fa-bars "></i>
+
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target=".navbar-main-collapse" aria-label="Toggle Navigation">
+          <img src="./assets/hamburger.svg">
+        </button>
+
+        <div class="collapse navbar-collapse navbar-main-collapse">
+          <ul class="nav navbar-nav ml-auto">
+
+            <li class="hidden nav-item">
+              <a href="./index.html"></a>
+            </li>
+            <li class="nav-item">
+              <a href="./index.html">Our Farms</a></li>
+            <li class="nav-item">
+              <a href="./index.html">Our produce</a>
+            </li>
+            <li class="nav-item">
+              <a href="./index.html">About Us</a>
+            </li>
+
+          </ul>
+        </div>
+
       </div>
-    </header>
+    </nav>
 
-<!-- Crops -->
+<!-- Jumbotron -->
 
-    <div class="crops">
+    <div class="container">
+      <div class="jumbotron">
+          <h1>Hello World!</h1>
+      </div>
+
     </div>
+
+<!-- Banner 1-->
+
+    <div class="container-fluid" id="banner-1">
+    </div>
+
+
 
 <!-- Statement -->
 
-    <div class="container main">
-
+    <div class="container">
       <div class="statement-left">
-        <h1>Research-driven, data-led</h1>
-        <h3>Mendel changes the agriculture and food industry for good.
-           We combine the latest in science and technology to maximize natural produce.
+        <h1>Real food, no more than 250km from your city.</h1>
+        <h3>We work directly with small-scale farmers and producers to source the freshest and tastiest products for your kitchen.
         </h3>
       </div>
 
       <div class="statement-right">
-        <h1>A global revolution</h1>
-        <h3>Traditional food companies have blindly shaped our environment and nutrition.
-          Mendel brings together the brightest minds to produce sustainable, nutritious and tasty foods.
+        <h1>From field to kitchen in one working day.</h1>
+        <h3>We want you to be able to focus on delighting with your food - leave the rest to us. Simply order, we deliver.
         </h3>
       </div>
 
       <div class="statement-left">
-        <h1>Food for thought</h1>
-        <h3>We believe you should always know where your food is really from and what is in it.
-          Mendel teaches you everyting you need to know about nutrition - easily digestible for everyone.
+        <h1>Sustainability at the heart of everything we do.</h1>
+        <h3>From packaging to delivery, we innovate to make food a solution to the crimate crisis, not contribute to it further.
         </h3>
       </div>
 
   </div>
 
-  <!-- Crops -->
+  <!-- Banner 2 -->
 
-      <div class="basket">
+      <div class="container newsletter">
       </div>
 
 
@@ -76,6 +98,10 @@
         <li><a href="./privacy.html">Privacy</a></li>
       </ul>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
   </body>
 </html>
