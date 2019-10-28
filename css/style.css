@@ -5,32 +5,72 @@
   border: 1px solid blue;
 } */
 
+/* General */
 
-/* Header */
 
 body {
   font-family: "Montserrat";
 }
 
 h1 {
-  font-family: "Roboto Mono";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 80px;
+  letter-spacing: -0.015em;
+}
+
+h2 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 72px;
+}
+
+/* Header */
+
+.navbar {
+  height: 60px;
+}
+
+.navbar a {
+  color: black;
 }
 
 #logo {
-  max-height: 3.5rem;
+  max-height: 50px;
 }
 
-/* Banner 1 */
+.navbar ul {
+  width: 400px;
+}
 
-#banner-1 {
-    background-image: url("../assets/manufacture.jpg");
-    /* background-image: url("../assets/manufacture.jpg"); */
+/* Hero */
+
+#hero-text {
+  height: 90vh;
+  background-color: white;
+}
+
+#button-first{
+  max-width: 200px;
+  margin-top: 2rem;
+}
+
+#hero-image {
+    background-image: url("../assets/images/produce.jpg");
     height: 90vh;
     max-height: 750px;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: 25%;
     background-size: cover;
     image-rendering: crisp-edges;
+}
+
+/* Body */
+
+.body {
+  background-color: #EFEFEF;
 }
 
 
