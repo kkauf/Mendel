@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700');
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono:300&display=swap');
 
-/* header, nav, div, ul, li, h1, h2, span {
+/* header, nav, div, ul, li, h1, h2, span, img, a{
   border: 1px solid blue;
 } */
 
@@ -54,12 +54,6 @@ p {
   border-color: #219653;
 }
 
-.button-one:active {
-  color: white;
-  background-color: #219653;
-  border-color: #219653;
-}
-
 
 /* Header */
 
@@ -67,12 +61,12 @@ p {
   height: 60px;
 }
 
-.navbar a {
-  color: black;
-}
-
 #logo {
   height: 50px;
+}
+
+.navbar a {
+  color: black;
 }
 
 .navbar ul {
@@ -169,6 +163,38 @@ p {
 
 .newsletter .button-one {
   margin: 1rem;
+}
+
+
+/* Footer */
+
+#footer-box{
+  height: 400px;
+}
+
+footer .footer-logo {
+  margin: 0 3rem;
+}
+
+footer ul {
+  padding: 1rem 0;
+}
+
+.footer-nav li {
+  flex-basis: 0;
+  min-width: 140px;
+}
+
+.footer a {
+  color: black;
+}
+
+.footer a:hover {
+  color: #219653;
+}
+
+footer small {
+  padding-top: 1rem;
 }
 
 
