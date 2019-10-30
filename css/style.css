@@ -1,212 +1,231 @@
-html, body {
-  font-size: 16px;
-}
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:300&display=swap');
 
-/* header, nav, div, ul, li, h1, h2, span {
+/* header, nav, div, ul, li, h1, h2, span, img, a{
   border: 1px solid blue;
 } */
 
-.container {
-  max-width: 1050px;
-  margin: 0 auto;
-  box-sizing: border-box;
-  padding: 0 1rem;
-}
+/* General */
 
-.tablet,
-.mobile,
-.mobile::before {
-  display: none;
-}
 
 body {
-  font-family: 'Montserrat', sans-serif;
-  color: #616161;
+  font-family: "Montserrat";
 }
-
-h1, h2 {
-  margin: 1rem 0;
-  line-height: 1.5;
-}
-
 
 h1 {
-  color: #474747;
-  font-weight: 700;
-  font-size: 2rem;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 3rem;
+  line-height: 80px;
+  letter-spacing: -0.015em;
 }
 
 h2 {
-  color: #474747;
-  font-weight: 600;
-  font-size: 2rem;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2.5rem;
+  line-height: 72px;
 }
 
 h3 {
-  color: #474747;
-  font-weight: 500;
-  font-size: 1.2rem;
-  line-height: 1.5;
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 36px;
+  letter-spacing: -0.015em;
+  padding:
 }
 
-p,
-footer li {
-  font-weight: 400;
-  font-size: .8rem;
-  padding: 0.5rem 0;
-  line-height: 1.5;
+p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 30px;
 }
 
-span {
-  line-height: 1.5;
+.button-one {
+  width: 200px;
+  color: #219653;
+  border-color: #219653;
 }
 
-a {
-  color: inherit;
-  text-decoration: inherit;
-}
-
-a:visited {
-  color: inherit;
-}
-
-footer ul,
-header ul {
-  display: flex;
-}
-
-footer li,
-header li {
-  padding: 1em;
+.button-one:hover {
+  color: white;
+  background-color: #219653;
+  border-color: #219653;
 }
 
 
 /* Header */
 
-header {
-  background-color: #FFF;
-  width: 100%;
+.navbar {
+  height: 60px;
 }
 
-header .container {
-  padding: 1rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+#logo {
+  height: 50px;
 }
 
-.logo {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  height: inherit;
+.navbar a {
+  color: black;
+}
+
+.navbar ul {
+  width: 400px;
+}
+
+.navbar a:hover {
+  color: #219653;
+}
+
+/* Hero */
+
+.hero .button-one {
+  margin-top: 2rem;
+}
+
+.hero {
+  height: 90vh;
   overflow: hidden;
 }
 
-.logo img {
-  max-height: 2rem;
-  display: block;
+
+
+/* Body */
+
+.body {
+  background-color: #EFEFEF;
+  padding: 120px 0;
 }
 
-header li:first-child {
-  display: none;
+.body h2 {
 }
 
-@media only screen and (max-width: 500px) {
-   .desktop{
-    display: none;
-  }
-  .mobile {
-    display: block;
-  }
+.body h3 {
+  margin-top: 2rem;
+  padding: 1rem 0;
 }
 
-/* Crops */
+/* Sub-page Hero */
 
-.crops {
-  top: 10rem;
-  background-image: url("../assets/products/farm.jpg");
-}
-
-.crops, .basket {
-  height: 100vh;
-  max-height: 750px;
+.sub-hero {
+  background-image: url("../assets/images/Grete.jpg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top;
   background-size: cover;
   image-rendering: crisp-edges;
 }
 
-@media only screen and (max-width: 900px) {
-  .crops, .basket {
-    max-height: 50vh;
-  }
+.sub-hero h2 {
+  margin: 14rem 0;
 }
 
-/* Statement */
+.padded-multiline {
+  line-height: 1.4;
+  padding: 2px 0;
+  margin: 20px auto;
+}
+.padded-multiline span {
+  background-color: black;
+  color: white;
+  display: inline;
+  padding: 0.45rem;
 
-.main {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  /* Needs prefixing */
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
 }
 
-.statement-left {
+
+/* Newsletter */
+
+.newsletter {
+  background-color: #EFEFEF;
+}
+
+.newsletter .row{
+  height: 600px;
+}
+
+.newsletter .input-parent {
+  margin: auto;
+  max-width: 500px;
   width: 50%;
-  margin-right: auto;
 }
 
-.statement-right {
-  width: 50%;
-  margin-left: auto;
+.newsletter .input input {
+  background-color: white;
+  padding: 1.5rem;
 }
 
-@media only screen and (max-width: 900px) {
-  .statement-left, .statement-right {
-    width: 70%;
-  }
-
-  .statement-right h1,
-  .statement-right h3 {
-    text-align: right;
-  }
-  .main {
-    margin-top: 1rem;
-    margin-bottom: 2rem;
-    min-height: 50vh;
-  }
+.newsletter .input {
+  margin: 1rem;
 }
 
-@media only screen and (max-width: 600px) {
-  .statement-left, .statement-right {
-    width: 100%;
-    margin: 0;
-  }
-
-  .statement-right h1,
-  .statement-right h3 {
-    text-align: left;
-  }
-
-  .main {
-    margin-top: 1rem;
-    margin-bottom: 2rem;
-  }
+.newsletter .button-one {
+  margin: 1rem;
 }
-/* Basket */
 
-.basket {
-  background-image: url("../assets/products/basket.jpg");
-}
 
 /* Footer */
 
-footer {
-  border-top: 1px solid #E5E5E5;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 5rem;
+#footer-box{
+  height: 400px;
 }
+
+footer .footer-logo {
+  margin: 0 3rem;
+}
+
+footer ul {
+  padding: 1rem 0;
+}
+
+.footer-nav li {
+  flex-basis: 0;
+  min-width: 140px;
+}
+
+.footer a {
+  color: black;
+}
+
+.footer a:hover {
+  color: #219653;
+}
+
+footer small {
+  padding-top: 1rem;
+}
+
+
+/*---Media Queries --*/
+@media (max-width: 992px) {
+
+  }
+@media (max-width: 768px) {
+
+}
+@media (max-width: 576px) {
+
+}
+
+
+
+
+
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
