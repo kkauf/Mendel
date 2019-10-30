@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css" type="text/css">
     <title>Mendel</title>
-  </head>
   <body>
 
 <!-- Header -->
@@ -46,23 +45,24 @@
 
 <!-- Hero -->
 
+<div class="hero">
   <div class="container">
     <div class="row">
-
-      <div class="col d-flex flex-column justify-content-center">
+      <div class="col-6 d-flex flex-column justify-content-center">
         <h1>Groceries, but better.<br>
         Local, fresh, online.</h1>
-        <a href="#" class="btn btn-outline-primary btn-lg" id="button-first">
+        <a target="_blank" rel="noopener noreferrer" href="https://mendel-foods.us20.list-manage.com/subscribe/post?u=e60f16b10f32a87674eaa5f68&amp;id=c8e6296ad3" class="btn btn-outline-success btn-lg button-one">
           Learn more</a>
       </div>
-
-      <div class="col" id="hero-image">
+      <div class="col-6">
+        <img src="./assets/images/produce.jpg" alt="Produce">
       </div>
-
     </div>
   </div>
+</div>
 
-<!-- Banner 1-->
+
+<!-- Body-->
 
     <div class="body">
       <div class="container">
@@ -76,7 +76,8 @@
         <div class="row">
           <div class="col">
             <h3>Good for the planet, good for you.</h3>
-            <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est.</p>
+            <p>We work directly with small-scale farmers and producers to source the freshest and tastiest products for your kitchen.
+            From packaging to delivery, we innovate to make food a solution to the crimate crisis, not contribute to it further.</p>
           </div>
           <div class="col">
             <h3>Taste the difference.</h3>
@@ -87,7 +88,7 @@
         <div class="row">
           <div class="col">
             <h3>Shop your way.</h3>
-            <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est.</p>
+            <p>We want you to be able to focus on delighting with your food - leave the rest to us. Simply order, we deliver.</p>
           </div>
           <div class="col">
             <h3>Full transparency, period.</h3>
@@ -98,34 +99,61 @@
       </div>
     </div>
 
+<!-- Sub-page Hero -->
 
-<!-- Body -->
-
-    <div class="container">
-      <div class="statement-left">
-        <h1>Real food, no more than 250km from your city.</h1>
-        <h3>We work directly with small-scale farmers and producers to source the freshest and tastiest products for your kitchen.
-        </h3>
+<div class="sub-hero">
+  <div class="container">
+    <div class="row">
+      <div class="col-6 d-flex flex-column justify-content-center">
+        <h2 class="padded-multiline">
+          <span>Learn more about how we work with producers.</span>
+        </h2>
       </div>
-
-      <div class="statement-right">
-        <h1>From field to kitchen in one working day.</h1>
-        <h3>We want you to be able to focus on delighting with your food - leave the rest to us. Simply order, we deliver.
-        </h3>
-      </div>
-
-      <div class="statement-left">
-        <h1>Sustainability at the heart of everything we do.</h1>
-        <h3>From packaging to delivery, we innovate to make food a solution to the crimate crisis, not contribute to it further.
-        </h3>
-      </div>
-
+    </div>
   </div>
+</div>
 
-  <!-- Banner 2 -->
+<!-- Newsletter -->
 
-      <div class="container newsletter">
+<div class="newsletter">
+  <div class="container">
+    <div class="row">
+      <div class="col d-flex flex-column justify-content-center text-center">
+        <h2>Be the first to know when we launch in your city.</h2>
+
+        <!-- Begin Mailchimp Signup Form -->
+        <div  class="d-flex flex-column justify-content-between">
+          <form action="https://mendel-foods.us20.list-manage.com/subscribe/post?u=e60f16b10f32a87674eaa5f68&amp;id=c8e6296ad3" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+
+            <div class="d-flex flex-column justify-content-between text-left input-parent">
+
+              <div class="input">
+              	<input type="email" value="" name="EMAIL" class="required email form-control" id="mce-EMAIL" placeholder="Enter email">
+              </div>
+
+              <div class="input">
+              	<input type="text" value="" name="CITY" class="required  form-control" id="mce-CITY" placeholder="Enter city">
+              </div>
+
+            	<div id="mce-responses" class="clear">
+            		<div class="response" id="mce-error-response" style="display:none"></div>
+            		<div class="response" id="mce-success-response" style="display:none"></div>
+            	</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+
+          </div>
+
+          <div class="clear">
+            <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-outline-success btn-lg button-one">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+
+          </div>
+
+          </form>
+        </div>
       </div>
+    </div>
+  </div>
+</div>
 
 
 <!-- Footer -->
@@ -141,6 +169,5 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
   </body>
 </html>
