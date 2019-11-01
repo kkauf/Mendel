@@ -2,28 +2,139 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="./css/reset.css" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet">
-    <title>Mendel Foods</title>
-  </head>
+    <title>Mendel</title>
   <body>
 
-  <header class="container">
-      <div class="logo">
-        <img src="./assets/Mendel_logo_white.png" alt="Mendel Foods">
+<!-- Header -->
+
+    <nav class="navbar navbar-expand-lg bg-light sticky-top d-flex justify-content-between">
+      <div class="container">
+
+        <div class="navbar-brand">
+          <a class="navbar-logo" href="./index.html"><img id="logo" src="./assets/Mendel_logo.png" alt="Mendel Foods logo"></a>
+        </div>
+
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target=".navbar-main-collapse" aria-label="Toggle Navigation">
+          <img src="./assets/hamburger.svg">
+        </button>
+
+        <div class="collapse navbar-collapse navbar-main-collapse">
+          <ul class="nav navbar-nav ml-auto justify-content-between">
+
+            <li class="hidden nav-item">
+              <a href="./index.html"></a>
+            </li>
+            <li class="nav-item">
+              <a href="./index.html">Farms</a></li>
+            <li class="nav-item">
+              <a href="./index.html">Producers</a>
+            </li>
+            <li class="nav-item">
+              <a href="./index.html">About Us</a>
+            </li>
+
+          </ul>
+        </div>
+
       </div>
-  </header>
+    </nav>
 
-  <footer class="container">
-    <p>© Mendel Foods. All rights reserved.</p>
-    <ul>
-      <li><a href="./index.html">Home</a></li>
-      <li><a href="./imprint.html">Imprint</a></li>
-      <li><a href="./privacy.html">Privacy</a></li>
-    </ul>
-  </footer>
 
-  </body>
-</html>
+    <!-- Body -->
+
+    <div class="container">
+      <div class="row">
+        <div class="col-6 d-flex flex-column justify-content-center imprint">
+          <div class="imprint-box">
+
+            <h3>Angaben gem. § 5 TMG</h3>
+            <p><b>Betreiber und Kontakt:</b>
+            <br>
+            Konstantin Kaufmann<br>
+            ℅ Factory Works GmbH<br>
+            Lohmühlenstraße 65<br>
+            12435 Berlin<br><br>
+            contact@mendel-foods.com <br><br>
+
+            <b>Bilder und Grafiken:</b><br>
+            Angaben der Quelle für verwendetes Bilder- und Grafikmaterial:<br>
+            Yannic Schon & Susann Probst, https://kraut-kopf.de/<br><br>
+
+            <b>Online-Streitbeilegung gemäß Art. 14 Abs. 1 ODR-VO</b><br>
+            Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit, die Sie unter
+            <a href='http://ec.europa.eu/consumers/odr/'>http://ec.europa.eu/consumers/odr/</a>
+            finden.</p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+
+        <footer>
+          <div class="container">
+            <div class="d-flex flex-column justify-content-center align-center" id="footer-box">
+
+              <!-- Footer nav -->
+              <ul class="d-flex justify-content-between footer-nav">
+                <li class="nav-item d-flex flex-column justify-content-center align-center">
+                  <a href="./index.html">Producers</a>
+                </li>
+
+                <li class="nav-item d-flex flex-column justify-content-center align-center">
+                  <a href="./index.html">Products</a>
+                </li>
+
+                <li class="nav-item d-flex flex-column justify-content-center align-center">
+                  <a href="./index.html">About Us</a>
+                </li>
+
+                <a class="nav-item footer-logo d-flex flex-column justify-content-center align-center" href="./index.html">
+                  <img id="logo" src="./assets/Mendel_logo.png" alt="Mendel Foods logo">
+                </a>
+
+                <li class="nav-item d-flex flex-column justify-content-center align-center text-right">
+                  <a href="./privacy.html">Privacy</a>
+                </li>
+
+                <li class="nav-item d-flex flex-column justify-content-center align-center text-right">
+                  <a href="./imprint.html">Imprint</a>
+                </li>
+
+                <li class="nav-item d-flex flex-column justify-content-center align-center text-right">
+                  <a href="./index.html">Contact Us</a>
+                </li>
+              </ul>
+
+              <!-- Social icons -->
+
+              <ul class="row justify-content-center">
+                  <li class="">
+                      <a href="https://www.instagram.com/mendel_foods">
+                          <img class="social nav-link" src="./assets/Social_Instagram.svg" alt="Instagram" target="_blank" rel="noopener noreferrer">
+                      </a>
+                  </li>
+                  <li class="">
+                      <a href="https://twitter.com/kgmkaufmann">
+                          <img class="social nav-link" src="./assets/Social_Twitter.svg" alt="Twitter" target="_blank" rel="noopener noreferrer">
+                      </a>
+              </ul>
+
+              <!-- Copyright -->
+
+              <small class="text-center">© Mendel Foods, 2019.</small>
+
+            </div>
+          </div>
+        </footer>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      </body>
+    </html>

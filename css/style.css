@@ -198,6 +198,29 @@ footer small {
   padding-top: 1rem;
 }
 
+/* Imprint */
+
+.imprint {
+  height: 90vh;
+  margin: auto;
+}
+
+.imprint-box {
+  background-color: #EFEFEF;
+  padding: 2rem 2rem;
+  border-radius: 1.5%;
+}
+
+.imprint-box b {
+  line-height: 2rem;
+}
+
+/* Privacy */
+
+.privacy li{
+  list-style: disc inside;
+}
+
 
 /*---Media Queries --*/
 @media (max-width: 992px) {
