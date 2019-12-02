@@ -84,9 +84,18 @@ p {
   margin-top: 2rem;
 }
 
-.hero {
-  height: 90vh;
+.hero{
+  min-height: 90vh;
+  max-height: 1000px;
   overflow: hidden;
+}
+
+.hero-container {
+  min-height: 300px;
+}
+
+.hero-container img {
+  height: 100%;
 }
 
 
@@ -224,7 +233,9 @@ footer small {
 
 /*---Media Queries --*/
 @media (max-width: 992px) {
-
+  footer .desktop {
+    display: none;
+  }
   }
 @media (max-width: 768px) {
 
